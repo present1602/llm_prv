@@ -1,0 +1,14 @@
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [react()],
+  server: {
+    port: 5173,
+    proxy: {
+      // 백엔드(FastAPI)로 프록시 — 폐쇄형: 모든 호출은 로컬로만
+      '/api': 'http://127.0.0.1:8000',
+    },
+  },
+})

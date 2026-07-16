@@ -1,0 +1,4 @@
+/* App.css 가 전체 스타일을 담당한다. 기본 리셋만 유지. */
+:root {
+  color-scheme: light;
+}
