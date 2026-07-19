@@ -138,7 +138,7 @@ export default function App() {
           </button>
           {!invention.description && <p className="hint">‘발명 설명’은 필수입니다.</p>}
         </section>
-
+          
         <section className="panel output-panel">
           <div className="output-header">
             <h2>명세서 초안</h2>
